@@ -4,16 +4,22 @@
   напишіть скорочену ініціалізацію.
 */
 
-class Student {
-  public name: string;
-  public age: number;
-  public grade: string;
+//? 1 variant ?//
 
-  constructor(name: string, age: number, grade: string) {
+// class Student {
+//   constructor(public name: string, public age: number, public grade: string) {}
+// }
+
+///OR
+
+//* 2 variant *//
+
+class Student {
+  constructor(public name: string, public age: number, public grade: string) {
     this.name = name;
     this.age = age;
     this.grade = grade;
   }
 }
 
-export {};
+export { Student };
